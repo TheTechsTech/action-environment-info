@@ -1,4 +1,4 @@
-name: 'Runner environment'
+name: 'action-environment-info'
 description: 'Add action runner environment information to output'
 branding:
   icon: server
