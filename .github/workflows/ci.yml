@@ -15,7 +15,7 @@ jobs:
     steps:
     - name: Get runner environment variables
       id: runner
-      uses: msansoni/runner-environment-action@v1
+      uses: techno-express/runner-environment-action@v1.1
     - name: Print output
       id: output
       run: |
