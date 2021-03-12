@@ -10,16 +10,6 @@
     "type": "git",
     "url": "git+https://github.com/msansoni/runner-environment-action.git"
   },
-  "keywords": [],
-  "author": "msansoni <f1-game-udp-parser@michaelsansoni.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/msansoni/runner-environment-action/issues"
-  },
-  "homepage": "https://github.com/msansoni/runner-environment-action#readme",
-  "dependencies": {
-    "@actions/core": "^1.2.3"
-  },
   "keywords": [
     "action",
     "workflow",
@@ -30,5 +20,15 @@
     "virtual",
     "arch",
     "architecture"
-  ]
+  ],
+  "author": "msansoni <f1-game-udp-parser@michaelsansoni.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/msansoni/runner-environment-action/issues"
+  },
+  "homepage": "https://github.com/msansoni/runner-environment-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.3",
+    "macos-release": "^2.2.0"
+  }
 }
