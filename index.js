@@ -3,7 +3,9 @@ const core = require('@actions/core');
 const macosRelease = require('macos-release');
 
 try {
-  let version = (process.platform === 'darwin') ? macosRelease(version).version : os.release();
+  let version = os.release();
+  if (process.platform === 'darwin')
+    version = macosRelease(version).version;
   core.setOutput("platform", process.platform);
   core.setOutput("arch", process.arch);
   core.setOutput("release", version);
