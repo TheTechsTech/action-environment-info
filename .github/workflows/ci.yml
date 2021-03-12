@@ -19,4 +19,4 @@ jobs:
     - name: Print output
       id: output
       run: |
-        echo ${{ format('platform: {0}, arch: {1}', steps.runner.outputs.platform, steps.runner.outputs.arch) }}
+        echo ${{ format('platform: {0}, arch: {1}, release: {2}', steps.runner.outputs.platform, steps.runner.outputs.arch, steps.runner.outputs.release) }}
