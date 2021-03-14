@@ -30,7 +30,7 @@
   "dependencies": {
     "@actions/core": "^1.2.6",
     "macos-release": "^2.2.0",
-    "linux-release-info": "^3.0.0",
+    "linux-os-info": "^2.0.0",
     "win-version": "^1.0.2"
   }
 }

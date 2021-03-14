@@ -10,6 +10,7 @@ A list of current outputs saved by the action. These are accessed by: `steps.{id
 - `steps.{id}.outputs.arch`: System architecture
 - `steps.{id}.outputs.release`: OS Release
 - `steps.{id}.outputs.version`: OS Version
+- `steps.{id}.outputs.name`: OS/Distribution Name
 - `steps.{id}.outputs.hostname`: Machine Hostname
 
 ## Usage
@@ -36,7 +37,7 @@ jobs:
       - name: Save something with environment name
         id: save-asset
         with:
-          name: ${{ format('v{0}-{1}-{2}-{3}-{4}.tar.gz', steps.runner.outputs.platform, steps.runner.outputs.arch, steps.runner.outputs.release, steps.runner.outputs.version, steps.runner.outputs.hostname) }}
+          name: ${{ format('v{0}-{1}-{2}-{3}-{4}-{5}.tar.gz', steps.runner.outputs.platform, steps.runner.outputs.arch, steps.runner.outputs.release, steps.runner.outputs.version, steps.runner.outputs.hostname, steps.runner.outputs.name) }}
 ```
 
 ## License

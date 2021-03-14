@@ -11,7 +11,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [macOS-latest, windows-2019, ubuntu-18.04]
+        os: [macOS-latest, windows-latest, ubuntu-latest]
     steps:
     - name: Get runner environment variables
       id: runner
@@ -19,4 +19,4 @@ jobs:
     - name: Print output
       id: output
       run: |
-        echo ${{ format('platform: {0}, arch: {1}, release: {2}, version: {3}, hostname: {4}', steps.runner.outputs.platform, steps.runner.outputs.arch, steps.runner.outputs.release, steps.runner.outputs.version, steps.runner.outputs.hostname) }}
+        echo ${{ format('platform: {0}, arch: {1}, release: {2}, version: {3}, hostname: {4}, name: {5}', steps.runner.outputs.platform, steps.runner.outputs.arch, steps.runner.outputs.release, steps.runner.outputs.version, steps.runner.outputs.hostname, steps.runner.outputs.name) }}
