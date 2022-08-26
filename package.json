@@ -10,7 +10,6 @@
     "type": "git",
     "url": "git+https://github.com/msansoni/runner-environment-action.git"
   },
-  "keywords": [],
   "author": "msansoni <f1-game-udp-parser@michaelsansoni.com>",
   "license": "MIT",
   "bugs": {
@@ -18,7 +17,10 @@
   },
   "homepage": "https://github.com/msansoni/runner-environment-action#readme",
   "dependencies": {
-    "@actions/core": "^1.9.1"
+    "@actions/core": "^1.9.1",
+    "macos-release": "^2.2.0",
+    "linux-os-info": "^2.0.0",
+    "win-version": "^1.0.2"
   },
   "keywords": [
     "action",
