@@ -5,6 +5,7 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
+  workflow_dispatch:
 
 jobs:
   test:
@@ -15,7 +16,7 @@ jobs:
     steps:
     - name: Get runner environment variables
       id: runner
-      uses: TheTechsTech/action-environment-info@v1.0.0
+      uses: ./
     - name: Print output
       id: output
       run: |
