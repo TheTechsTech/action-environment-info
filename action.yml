@@ -9,5 +9,5 @@ outputs:
   arch:
     description: 'System architecture'
 runs:
-  using: 'node12'
+  using: 'node14'
   main: 'index.js'

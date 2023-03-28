@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/msansoni/runner-environment-action#readme",
   "dependencies": {
-    "@actions/core": "^1.9.1",
+    "@actions/core": "^1.10.0",
     "macos-release": "^2.2.0",
     "linux-os-info": "^2.0.0",
     "win-version": "^1.0.2"
