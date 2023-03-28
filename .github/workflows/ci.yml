@@ -11,11 +11,11 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [macOS-latest, windows-latest, ubuntu-latest]
+        os: [macos-latest, windows-latest, ubuntu-latest]
     steps:
     - name: Get runner environment variables
       id: runner
-      uses: techno-express/action-environment-info@1
+      uses: TheTechsTech/action-environment-info@1
     - name: Print output
       id: output
       run: |
