@@ -1,6 +1,6 @@
 {
   "name": "@msansoni/runner-environment-action",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "An Action to create output variables detailing the runner environment",
   "main": "index.js",
   "scripts": {
