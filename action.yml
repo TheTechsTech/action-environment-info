@@ -8,6 +8,14 @@ outputs:
     description: 'System platform'
   arch:
     description: 'System architecture'
+  release:
+    description: 'OS Release'
+  version:
+    description: 'OS Version'
+  name:
+    description: 'OS/Distribution Name'
+  hostname:
+    description: 'Machine Hostname'
 runs:
   using: 'node12'
   main: 'index.js'
