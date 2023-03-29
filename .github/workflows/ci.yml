@@ -12,7 +12,7 @@ jobs:
     steps:
     - name: Get runner environment variables
       id: runner
-      uses: TheTechsTech/action-environment-info@v1.0.4
+      uses: TheTechsTech/action-environment-info@v1.0.5
     - name: Print output
       id: output
       run: |
